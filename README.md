@@ -1,2 +1,1 @@
-# satis
-Satis configuration and usage
+# Satis configuration and usage
