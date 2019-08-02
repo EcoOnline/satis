@@ -1,0 +1,40 @@
+# http://docs.aws.amazon.com/codedeploy/latest/userguide/app-spec-ref.html
+version: 0.0
+os: linux
+files:
+  - source: ./content/satis.json
+    destination: /local/app/packages/
+  - source: ./scripts/cd_utils.sh
+    destination: /local/basefarm/
+permissions:
+  - object: /local/app/packages/
+    pattern: "satis.json"
+    owner: root
+    group: root
+    mode: 600
+    type:
+      - file
+  - object: /local/basefarm
+    pattern: "*.sh"
+    owner: root
+    group: root
+    mode: 755
+    type:
+      - file
+ hooks:
+  ApplicationStop:
+    - location: ./scripts/webapp_stop.sh
+      timeout: 300
+      runas: root
+  BeforeInstall:
+    - location: ./scripts/webapp_prep.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: ./scripts/webapp_config.sh
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: ./scripts/webapp_start.sh
+      timeout: 300
+      runas: root

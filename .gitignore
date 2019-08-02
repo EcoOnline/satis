@@ -1,0 +1,14 @@
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+
+# session
+Session.vim
+
+### Ignore .DS_Store on MAC
+.DS_Store
+.DS_Store?
+
+### Intellij
+.idea
