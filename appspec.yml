@@ -21,12 +21,11 @@ permissions:
     mode: 755
     type:
       - file
- hooks:
-  ApplicationStop:
+hooks:
+  BeforeInstall:
     - location: ./scripts/webapp_stop.sh
       timeout: 300
       runas: root
-  BeforeInstall:
     - location: ./scripts/webapp_prep.sh
       timeout: 300
       runas: root
