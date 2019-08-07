@@ -4,8 +4,6 @@ os: linux
 files:
   - source: ./content/satis.json
     destination: /local/app/packages/
-  - source: ./content/satis_build.sh
-    destination: /local/app/
   - source: ./scripts/cd_utils.sh
     destination: /local/basefarm/
 permissions:
@@ -17,13 +15,6 @@ permissions:
     type:
       - file
   - object: /local/basefarm
-    pattern: "*.sh"
-    owner: root
-    group: root
-    mode: 755
-    type:
-      - file
-  - object: /local/app
     pattern: "*.sh"
     owner: root
     group: root

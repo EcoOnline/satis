@@ -7,8 +7,7 @@ add_prereqs(){
 }
 
 add_satis(){
-  # remove existing satis install, but keep old build results
-  rm -fr /local/app/satis
+  rm -fr /local/app/*
   mkdir -p /local/app/packages
   pushd /local/app || exit
   php /usr/local/bin/composer create-project composer/satis --stability=dev --keep-vcs
