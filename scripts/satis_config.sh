@@ -46,7 +46,7 @@ EOF
 
 add_cron(){
   cat <<EOF > /etc/cron.d/"$APP_NAME"
-*/5 * * * * root sh /local/app/satis_build.sh
+*/5 * * * * root /usr/bin/flock -w 0 /local/app/satis_build.lock sh /local/app/satis_build.sh
 EOF
 }
 
