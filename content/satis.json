@@ -38,7 +38,6 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-client-package.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/integration-api.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/forms-package.git" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/documentation.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/satis.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/laravel-nova.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/fpdi-pdf-parser.git" },
