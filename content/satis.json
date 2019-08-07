@@ -1,6 +1,6 @@
 {
   "name": "EcoOnline packages",
-  "homepage": "https://repo.test.ecoonline.cloud",
+  "homepage": "http://ecoonline-packages.s3-website-eu-west-1.amazonaws.com",
   "repositories": [
     { "type": "vcs", "url": "git@github.com:ecoonline/label-api.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/location-api.git" },
@@ -49,7 +49,7 @@
   "archive": {
     "directory": "dist",
     "format": "zip",
-    "prefix-url": "https://repo.test.ecoonline.cloud",
+    "prefix-url": "http://ecoonline-packages.s3-website-eu-west-1.amazonaws.com",
     "skip-dev": false
   }
 }
