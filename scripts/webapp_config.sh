@@ -30,33 +30,6 @@ add_logrotate(){
 EOF
 }
 
-add_virtualhost(){
-  cat <<EOF > /etc/httpd/conf.d/"$APP_NAME".conf
-<VirtualHost *:80>
-  ServerName repo.test.ecoonline.cloud
-  DocumentRoot /local/app/packages
-
-  <Directory />
-    DirectoryIndex index.html
-    Options FollowSymLinks
-    #AllowOverride None
-  </Directory>
-
-  <Directory /local/app/packages>
-    DirectoryIndex index.html
-    Options Indexes FollowSymLinks MultiViews
-    #AllowOverride None
-    Require all granted
-    #Order allow,deny
-    #allow from all
-  </Directory>
-
-  ErrorLog /var/log/app/error.log
-  CustomLog /var/log/app/access.log combined
-</VirtualHost>
-EOF
-}
-
 add_key(){
   key=$(get_ssm_param "/service/$APP_NAME/key")
   echo "$key" > /root/.ssh/id_rsa_"$APP_NAME"
@@ -80,6 +53,5 @@ EOF
 
 add_logstream
 add_logrotate
-add_virtualhost
 add_key
 add_cron
