@@ -32,17 +32,10 @@ permissions:
       - file
 hooks:
   BeforeInstall:
-    - location: ./scripts/webapp_stop.sh
-      timeout: 300
-      runas: root
-    - location: ./scripts/webapp_prep.sh
+    - location: ./scripts/satis_prep.sh
       timeout: 300
       runas: root
   AfterInstall:
-    - location: ./scripts/webapp_config.sh
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: ./scripts/webapp_start.sh
+    - location: ./scripts/satis_config.sh
       timeout: 300
       runas: root

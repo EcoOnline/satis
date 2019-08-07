@@ -1,7 +1,7 @@
 #!/bin/bash
 
 . /local/basefarm/cd_utils.sh
-APP_NAME=$(grep NAME /local/basefarm/envir_conf | awk -F\= '{print $2}')
+APP_NAME=$(get_name)
 
 add_logstream(){
   cat <<EOF >/etc/awslogs/config/$APP_NAME.conf
@@ -15,7 +15,6 @@ EOF
 
   systemctl restart awslogsd
 }
-
 
 add_logrotate(){
   cat <<EOF > /etc/logrotate.d/"$APP_NAME"-logrotate
