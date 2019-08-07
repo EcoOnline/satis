@@ -11,7 +11,7 @@ add_prereqs(){
 }
 
 add_satis(){
-  rm -fr /local/app/*
+  rm -fr /local/app/satis
   mkdir -p /local/app/packages
   pushd /local/app || exit
   php /usr/local/bin/composer create-project composer/satis --stability=dev --keep-vcs
