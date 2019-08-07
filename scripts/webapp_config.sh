@@ -6,7 +6,7 @@ APP_NAME=$(grep NAME /local/basefarm/envir_conf | awk -F\= '{print $2}')
 add_logstream(){
   cat <<EOF >/etc/awslogs/config/$APP_NAME.conf
 [/var/log/app/$APP_NAME.log]
-file = /var/log/app/error.log
+file = /var/log/app/satis.log
 buffer_duration = 5000
 log_stream_name = {instance_id}
 initial_position = start_of_file
@@ -82,4 +82,4 @@ add_logstream
 add_logrotate
 add_virtualhost
 add_key
-add_cron
+# add_cron
