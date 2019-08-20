@@ -2,7 +2,8 @@
 
 . /local/basefarm/cd_utils.sh
 LOGFILE="/var/log/app/satis.log"
-S3_NAME=$(get_ssm_param "/service/repo/s3_name")
+APP_NAME=$(get_name)
+S3_NAME=$(get_ssm_param "/service/${APP_NAME}/s3_name")
 
 print_log(){
   information=$1
