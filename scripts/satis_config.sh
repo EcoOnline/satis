@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 . /local/basefarm/cd_utils.sh
 APP_NAME=$(get_name)

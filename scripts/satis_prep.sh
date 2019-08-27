@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 add_prereqs(){
   amazon-linux-extras install php7.3

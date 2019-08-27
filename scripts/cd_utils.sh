@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Author: Basefarm
 # Purpose: Utility functions for CodeDeploy scripts
