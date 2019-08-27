@@ -36,6 +36,9 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall:
+    - location: ./scripts/datadog_install.sh
+      timeout: 300
+      runas: root
     - location: ./scripts/satis_config.sh
       timeout: 300
       runas: root
