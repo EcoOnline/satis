@@ -43,7 +43,10 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-baselib.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-http.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-sql.git" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/logics-xml.git" }
+    { "type": "vcs", "url": "git@github.com:ecoonline/logics-xml.git" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/sm-login-package" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/sm-incident-package" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/substitution-api" }
   ],
   "require-all": false,
   "archive": {
