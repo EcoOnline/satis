@@ -22,6 +22,7 @@ while [ -f /var/run/yum.pid ]; do
   sleep 2
 done
 
+yum -y install deltarpm
 yum -y install datadog-agent
 
 sed "s/api_key:.*/api_key: $DD_API_KEY/" /etc/datadog-agent/datadog.yaml.example >/etc/datadog-agent/datadog.yaml
