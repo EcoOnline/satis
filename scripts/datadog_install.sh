@@ -2,7 +2,7 @@
 
 # Author: Basefarm
 # Purpose: Install DataDog Agent
-# https://docs.datadoghq.com/agent/guide/upgrade-to-agent-v6/#amazon-linux
+# https://docs.datadoghq.com/agent/versions/upgrade_to_agent_v6/?tab=linux#amazon-linux
 
 . /local/basefarm/cd_utils.sh
 
@@ -10,8 +10,8 @@ DD_API_KEY=$(get_ssm_param "/integration/datadog/apikey")
 
 cat <<EOF > /etc/yum.repos.d/datadog.repo
 [datadog]
-name = Datadog, Inc.
-baseurl = https://yum.datadoghq.com/stable/6/x86_64/
+name=Datadog, Inc.
+baseurl=https://yum.datadoghq.com/stable/6/x86_64/
 enabled=1
 gpgcheck=1
 gpgkey=https://yum.datadoghq.com/DATADOG_RPM_KEY.public
