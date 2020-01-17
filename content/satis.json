@@ -47,7 +47,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/sm-login-package" },
     { "type": "vcs", "url": "git@github.com:ecoonline/sm-incident-package" },
     { "type": "vcs", "url": "git@github.com:ecoonline/substitution-api" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/content-api" }
+    { "type": "vcs", "url": "git@github.com:ecoonline/platform-content" }
   ],
   "require-all": false,
   "archive": {
