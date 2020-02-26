@@ -48,6 +48,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/sm-incident-package" },
     { "type": "vcs", "url": "git@github.com:ecoonline/substitution-api" },
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-content" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/platform-companies" },
     { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" }
   ],
   "require-all": false,
