@@ -52,6 +52,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-apitokens" },
     { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" }
   ],
+  "require-dependencies": true,
   "require-all": false,
   "archive": {
     "directory": "dist",
