@@ -51,7 +51,8 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-companies" },
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-apitokens" },
     { "type": "vcs", "url": "https://github.com/EcoOnline/platform-users" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" }
+    { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" },
+    { "type": "vcs", "url": "https://github.com/EcoOnline/lingo-api" }
   ],
   "require-dependencies": true,
   "require-all": false,
