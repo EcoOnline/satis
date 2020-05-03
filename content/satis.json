@@ -40,6 +40,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/forms-package.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/laravel-nova.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/fpdi-pdf-parser.git" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/lingo-api" },
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-baselib.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-http.git" },
     { "type": "vcs", "url": "git@github.com:ecoonline/logics-sql.git" },
@@ -51,8 +52,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-companies" },
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-apitokens" },
     { "type": "vcs", "url": "git@github.com/EcoOnline/platform-users" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/lingo-api" }
+    { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" }
   ],
   "require-dependencies": true,
   "require-all": false,
