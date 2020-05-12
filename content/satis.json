@@ -1,5 +1,5 @@
 {
-  "name": "EcoOnline packages",
+  "name": "ecoonline-packages",
   "homepage": "http://ecoonline-packages.s3-website-eu-west-1.amazonaws.com",
   "repositories": [
     { "type": "vcs", "url": "git@github.com:ecoonline/label-api.git" },
