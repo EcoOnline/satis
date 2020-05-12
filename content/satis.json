@@ -55,7 +55,7 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/smartforms-api" },
     { "type": "vcs", "url": "git@github.com:ecoonline/lingo-api" }
   ],
-  "require-dependencies": true,
+  "require-dependencies": false,
   "require-all": false,
   "archive": {
     "directory": "dist",
