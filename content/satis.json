@@ -56,7 +56,8 @@
     { "type": "vcs", "url": "git@github.com:ecoonline/lingo-api" },
     { "type": "vcs", "url": "git@github.com:ecoonline/platform-customers" },
     { "type": "vcs", "url": "git@github.com:ecoonline/chemdoc-auth-package" },
-    { "type": "vcs", "url": "git@github.com:ecoonline/user-api-frontend" }
+    { "type": "vcs", "url": "git@github.com:ecoonline/user-api-frontend" },
+    { "type": "vcs", "url": "git@github.com:ecoonline/company-api" }
   ],
   "require-dependencies": false,
   "require-all": false,
